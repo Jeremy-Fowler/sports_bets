@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"
+    defer></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="m-3">Sports Bets</h1>
+  </header>
+
+  <main>
+    <section class="container">
+      <div class="row">
+        <div class="col-12 mb-3">
+          <h2>Your Money: <span id="money" class="text-success"></span></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <h3 class="text-primary">Team 1</h3>
+          <div>
+            <button onclick="placeBetOnTeam(1, 25)" class="btn btn-primary">Bet $25</button>
+            <button onclick="placeBetOnTeam(1, 50)" class="btn btn-primary">Bet $50</button>
+            <button onclick="placeBetOnTeam(1, 100)" class="btn btn-primary">Bet $100</button>
+            <button onclick="goAllIn(1)" class="btn btn-primary">All In</button>
+            <button onclick="placeCustomBet(1)" class="btn btn-primary">Custom Bet</button>
+          </div>
+          <p class="fs-1" id="team1"></p>
+        </div>
+        <div class="col-6">
+          <h3 class="text-danger">Team 2</h3>
+          <div>
+            <button onclick="placeBetOnTeam(2, 25)" class="btn btn-danger">Bet $25</button>
+            <button onclick="placeBetOnTeam(2, 50)" class="btn btn-danger">Bet $50</button>
+            <button onclick="placeBetOnTeam(2, 100)" class="btn btn-danger">Bet $100</button>
+            <button onclick="goAllIn(2)" class="btn btn-danger">All In</button>
+            <button onclick="placeCustomBet(2)" class="btn btn-danger">Custom Bet</button>
+          </div>
+          <p class="fs-1" id="team2"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
